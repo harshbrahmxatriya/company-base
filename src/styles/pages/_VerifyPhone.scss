@@ -48,11 +48,11 @@
       overflow: hidden;
       border-radius: 0;
       justify-content: space-between;
+      padding-top: 48px;
+      padding-bottom: 24px;
     }
-    .footer-btn {
-      @include l.footer-btn(grey);
-      align-self: center;
-      margin-bottom: 26px;
+    h1 {
+      margin-top: 0;
     }
   }
 }
