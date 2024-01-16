@@ -1,0 +1,26 @@
+@use "../layout" as l;
+.Login {
+  @include l.plain-canvas();
+
+  &__overlay {
+    @include l.overlay(45vw, 60vh, 612px, 380px);
+  }
+
+  &__form-side {
+    @include l.form-side();
+  }
+
+  &__form-side h1 {
+    margin: 32px 0;
+    align-self: center;
+    font-size: 28px;
+  }
+
+  &__last-fieldset {
+    margin-bottom: 34px;
+  }
+
+  .footer-btn {
+    @include l.footer-btn();
+  }
+}
