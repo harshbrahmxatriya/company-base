@@ -12,16 +12,19 @@ const SignUp = () => {
           <img src="/company-image.jpg" alt="login graphics" />
         </div>
         <div className="SignUp__form-side">
-          <div className="cancel-btn">
-            <MdCancel
-              style={{
-                fill: "blue",
-              }}
-              size={20}
-            />
-          </div>
-          <div className="form-content">
+          <section>
+            <div className="cancel-btn">
+              <MdCancel
+                style={{
+                  fill: "blue",
+                }}
+                size={20}
+              />
+            </div>
+
             <h1>SignUp</h1>
+          </section>
+          <section className="SignUp__bottom-section">
             <div className="fieldset">
               <FaAddressCard size={20} />
               <input
@@ -85,7 +88,7 @@ const SignUp = () => {
               Already have an account?
               <button className="footer-btn">Login here</button>{" "}
             </p>
-          </div>
+          </section>
         </div>
       </div>
     </div>

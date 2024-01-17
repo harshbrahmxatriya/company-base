@@ -18,8 +18,8 @@
   background-color: var(--formBackground-color);
 
   @media (max-width: 900px) {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     box-shadow: none;
     overflow: hidden;
     border-radius: 0;
@@ -30,12 +30,15 @@
 
 @mixin form-side() {
   width: 50%;
-  box-sizing: border-box;
+  padding: 0 32px;
+  padding-top: 20px;
+  position: relative;
   border-radius: 0 14px 14px 0;
   display: flex;
   flex-direction: column;
   @media (max-width: 700px) {
     width: 100%;
+    height: 100%;
   }
 }
 @mixin fieldset() {
@@ -79,8 +82,9 @@
 
 @mixin cancel-btn() {
   width: fit-content;
-  align-self: flex-end;
-  margin: 12px 20px 0 0;
+  position: absolute;
+  right: 14px;
+  top: 8px;
   cursor: pointer;
 }
 

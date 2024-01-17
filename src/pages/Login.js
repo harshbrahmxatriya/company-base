@@ -9,16 +9,18 @@ function Login() {
           <img src="/company-image.jpg" alt="login graphics" />
         </div>
         <div className="Login__form-side">
-          <div className="cancel-btn">
-            <MdCancel
-              style={{
-                fill: "blue",
-              }}
-              size={20}
-            />
-          </div>
-          <div className="form-content">
+          <section>
+            <div className="cancel-btn">
+              <MdCancel
+                style={{
+                  fill: "blue",
+                }}
+                size={20}
+              />
+            </div>
             <h1>Login</h1>
+          </section>
+          <section className="Login__botom-section">
             <div className="fieldset">
               <FaAddressCard size={20} />
               <input
@@ -27,7 +29,6 @@ function Login() {
                 className="field-input"
               />
             </div>
-
             <div className="fieldset Login__last-fieldset">
               <FaKey size={20} />
               <input
@@ -43,7 +44,7 @@ function Login() {
                 Sign up here
               </button>{" "}
             </p>
-          </div>
+          </section>
         </div>
       </div>
     </div>

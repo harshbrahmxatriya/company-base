@@ -12,7 +12,7 @@
 
   &__form-side h1 {
     margin: 32px 0;
-    align-self: center;
+    text-align: center;
     font-size: 28px;
   }
 
@@ -20,7 +20,28 @@
     margin-bottom: 34px;
   }
 
+  &__bottom-section {
+    display: flex;
+    flex-direction: column;
+  }
   .footer-btn {
-    @include l.footer-btn();
+    @include l.footer-btn(grey);
+    align-self: center;
+  }
+
+  @media (max-width: 700px) {
+    &__overlay {
+      padding: 24px 32px;
+    }
+    &__form-side {
+      justify-content: space-between;
+      h1 {
+        margin-top: 0;
+      }
+    }
+    .cancel-btn {
+      top: -10px;
+      right: 10px;
+    }
   }
 }
